@@ -197,9 +197,10 @@ HPF 85Hz(2nd) → 250Hz -2.5dB(Q1) → 3.3kHz +3dB(Q1.1) → 10.5kHz +2dB shelf
 
 ## 10. 参考实现
 
-本仓库 `build_remix_v5.py`（REMIX-AB-V5.1）是本 Skill 的完整参考实现：
+完整参考实现 = `reference_implementation/build_remix_v5.py`（REMIX-AB-V5.1，仓库根目录亦有同名脚本）：
 常量区=编曲表 → 拼接 → 人声链 → 网格回声 → 效果 → 混合（退场/Sub/Riser）→
 母带迭代 → 导出 → 元数据。照它的结构组织你的脚本。
+`reference_implementation/REMIX-AB-V5_Project_Metadata.json` 是配套的元数据输出范例。
 
 配套参考文档：
 - `references/grid_and_placement.md` —— 网格数学推导 + 对齐点搜寻法 + 落点微调规则

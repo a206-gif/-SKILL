@@ -2,6 +2,9 @@
 
 ## ⭐ Skill：`skills/vocal-x-dj-remix/`（教任何模型做 Remix 的方法论包）
 
+> **一键下载（ZIP，含参考实现）**：
+> https://github.com/a206-gif/-SKILL/raw/arena/203aa25a-skill/Vocal_x_DJ_Remix_Skill_Kit.zip
+
 - `SKILL.md` —— 主文档：无耳制作工作流（编曲七原则 / 锚点对齐 / 混音配方 / 母带收敛 / 质检表 / 十条军规 / 快速启动提示词）
 - `references/grid_and_placement.md` —— 网格数学与"天作之合"对齐点搜寻法
 - `references/dsp_cookbook.md` —— 可直接复制的 DSP 配方（压缩/混响/延迟/回声/软削波/限幅/MP3）
