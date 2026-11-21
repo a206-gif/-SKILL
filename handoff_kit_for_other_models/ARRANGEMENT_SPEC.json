@@ -1,0 +1,120 @@
+{
+  "kit_name": "A_Vocal_x_B_DJ_Remix_Handoff_Engineering_Kit",
+  "sample_rate": 44100,
+  "files": {
+    "a_vocals_original_130bpm_wav": "A_Vocals.wav",
+    "a_vocals_adapted_143_63bpm_fsharp_flac": "handoff_kit_for_other_models/A_Vocals_Full_Adapted_143.63BPM_Fsharp.flac",
+    "b_dj_instrumental_143_63bpm_wav": "B_Instrumental.wav",
+    "reference_v4_2_aligned_vocal_stem_flac": "stems_project/Remix_Aligned_A_Vocals_Stem.flac"
+  },
+  "grid_and_harmony": {
+    "music_a": {
+      "bpm": 130.0,
+      "beat_s": 0.46153846,
+      "bar_s": 1.84615385,
+      "bar0_beat1_anchor_s": 0.0218,
+      "key": "F major / D minor (A440)"
+    },
+    "music_b": {
+      "bpm": 143.63,
+      "beat_s": 0.41773996,
+      "bar_s": 1.67095983,
+      "opening_signature_drum_fill_s": [0.0, 1.779],
+      "bar1_beat1_anchor_s": 1.779,
+      "total_bars": 106,
+      "duration_s": 179.026,
+      "key": "F# major / D# minor (-33 cents tuning)"
+    },
+    "a_to_b_adaptation": {
+      "tempo_stretch_ratio": 1.10484615,
+      "pitch_shift_semitones": 0.67,
+      "pitch_ratio": 1.0394589,
+      "rubberband_latency_s": 0.009,
+      "adapted_file_bar_formula": "t_adapted_s = 0.02873 + a_bar * 1.67095983"
+    }
+  },
+  "a_vocal_safe_silence_segments": [
+    {
+      "id": "Verse_1a_8bars",
+      "a_bars": [8.0, 16.0],
+      "a_grid_anchor_s": 14.791,
+      "safe_cut_in_a_130bpm_s": [14.95, 29.75],
+      "safe_cut_in_adapted_143_63bpm_s": [13.54, 26.94],
+      "lyrics": "秋天里的落叶 挥手同树道别 / 关于你的意见 我都想要了解",
+      "standalone_safe": true
+    },
+    {
+      "id": "Verse_1b_plus_PreChorus_1a_16bars",
+      "a_bars": [16.0, 32.0],
+      "a_grid_anchor_s": 29.56,
+      "safe_cut_in_a_130bpm_s": [29.75, 60.02],
+      "safe_cut_in_adapted_143_63bpm_s": [26.94, 54.33],
+      "lyrics": "陪伴三个季节 还是承受决裂 / 最后一句感谢 还有多余的抱歉 -> 奔跑在街上大雨淋湿的视线 反反复复的自我欺骗 / 在分开在之前 没有勇气想得更远",
+      "standalone_safe": true,
+      "note": "Do NOT cut at Bar 24 (44.33s) because '抱歉->奔跑' is sung legato without a silence gap."
+    },
+    {
+      "id": "PreChorus_1b_into_Chorus_1_Seamless_24bars",
+      "a_bars": [32.0, 56.0],
+      "a_grid_anchor_s": 59.099,
+      "safe_cut_in_a_130bpm_s": [60.02, 104.90],
+      "safe_cut_in_adapted_143_63bpm_s": [54.33, 94.96],
+      "lyrics": "黄昏下模糊的侧脸 遗忘了伤痛的少年 / 有风险才蜕变 时间总会说出再见 -> 曾经是心心念念…那残破的碎片 / 我知道从一开始…放开不再拖欠",
+      "standalone_safe": true,
+      "note": "Do NOT cut at Bar 40 (73.87s) because '再见->曾经是' is sung legato across the barline."
+    },
+    {
+      "id": "Verse_2_plus_PreChorus_2a_Seamless_16bars",
+      "a_bars": [64.0, 80.0],
+      "a_grid_anchor_s": 118.176,
+      "safe_cut_in_a_130bpm_s": [118.45, 148.90],
+      "safe_cut_in_adapted_143_63bpm_s": [107.22, 134.78],
+      "lyrics": "陪伴三个季节 还是承受决裂 / 最后一句感谢 还有多余的抱歉 -> 奔跑在街上大雨淋湿的视线 反反复复的自我欺骗 / 在分开在之前 没有勇气想得更远",
+      "standalone_safe": true,
+      "note": "Do NOT cut at Bar 72 (132.94s) because '抱歉->奔跑' is sung legato."
+    },
+    {
+      "id": "PreChorus_2b_Standalone_8bars",
+      "a_bars": [80.0, 88.0],
+      "a_grid_anchor_s": 147.714,
+      "safe_cut_in_a_130bpm_s": [148.90, 164.50],
+      "safe_cut_in_adapted_143_63bpm_s": [134.78, 148.90],
+      "lyrics": "黄昏下模糊的侧脸 遗忘了伤痛的少年 / 有风险才蜕变 时间总会说出再见",
+      "standalone_safe": true
+    },
+    {
+      "id": "Chorus_2_OpeningHook_7_5bars",
+      "a_bars": [90.5, 98.0],
+      "a_grid_anchor_s": 167.099,
+      "safe_cut_in_a_130bpm_s": [166.85, 181.60],
+      "safe_cut_in_adapted_143_63bpm_s": [151.03, 164.38],
+      "lyrics": "曾经是心心念念 随随便便深深浅浅 / 爱上了不语不言 不计前嫌不知疲倦 / 向后向前遇见改变 那残破的碎片",
+      "standalone_safe": true,
+      "note": "Aligning Bar 90.5 directly to B Bar 1 (1.779s) gives zero-delay vocal entry right after B's drum fill and highest harmonic consonance."
+    },
+    {
+      "id": "Chorus_2_Full_16bars",
+      "a_bars": [90.0, 106.0],
+      "a_grid_anchor_s": 166.176,
+      "safe_cut_in_a_130bpm_s": [166.60, 196.00],
+      "safe_cut_in_adapted_143_63bpm_s": [150.80, 177.41],
+      "lyrics": "曾经是心心念念…那残破的碎片 / 我知道从一开始…永远太远走远遥远 放开不再拖欠",
+      "standalone_safe": true
+    }
+  ],
+  "b_instrumental_sections": [
+    {"name": "Intro_Signature_Drum_Fill", "b_bars_1idx": "0", "time_s": [0.0, 1.78], "bars": 1},
+    {"name": "Opening_Groove", "b_bars_1idx": "1..8", "b_bar_0idx": 0, "time_s": [1.78, 15.15], "bars": 8},
+    {"name": "BuildUp_1", "b_bars_1idx": "9..16", "b_bar_0idx": 8, "time_s": [15.15, 28.51], "bars": 8},
+    {"name": "Main_Drop_1", "b_bars_1idx": "17..32", "b_bar_0idx": 16, "time_s": [28.51, 55.25], "bars": 16},
+    {"name": "PostDrop_Synth_Breather", "b_bars_1idx": "33..34", "b_bar_0idx": 32, "time_s": [55.25, 58.59], "bars": 2},
+    {"name": "Mid_Groove_Verse", "b_bars_1idx": "35..42", "b_bar_0idx": 34, "time_s": [58.59, 71.96], "bars": 8},
+    {"name": "DJ_Breakdown_1_Riser", "b_bars_1idx": "43..49", "b_bar_0idx": 42, "time_s": [71.96, 83.66], "bars": 7},
+    {"name": "PreDrop_2_ReEntry", "b_bars_1idx": "50..57", "b_bar_0idx": 49, "time_s": [83.66, 97.02], "bars": 8},
+    {"name": "Main_Drop_2", "b_bars_1idx": "58..73", "b_bar_0idx": 57, "time_s": [97.02, 123.76], "bars": 16},
+    {"name": "Breakdown_Impact_Hit", "b_bars_1idx": "74", "b_bar_0idx": 73, "time_s": [123.76, 125.43], "bars": 1},
+    {"name": "Atmospheric_Breakdown_2_SnareBuild", "b_bars_1idx": "75..82", "b_bar_0idx": 74, "time_s": [125.43, 138.80], "bars": 8},
+    {"name": "Final_Climax_Drop", "b_bars_1idx": "83..98", "b_bar_0idx": 82, "time_s": [138.80, 165.53], "bars": 16},
+    {"name": "DJ_Club_Outro", "b_bars_1idx": "99..106", "b_bar_0idx": 98, "time_s": [165.53, 179.03], "bars": 8}
+  ]
+}

@@ -200,6 +200,19 @@ class RangeHTTPRequestHandler(SimpleHTTPRequestHandler):
     <div class="track-desc">已完成 143.63 BPM 节拍拉伸、+0.67 半音和声适配与混响延迟处理的 Remix 人声独立无损工程轨，可与 B_Instrumental.wav 1:1 同步导入任意 DAW 二次微调。</div>
     <audio controls preload="none" src="/stems_project/Remix_Aligned_A_Vocals_Stem.flac"></audio>
   </div>
+
+  <div class="track-card primary">
+    <div class="track-header">
+      <div class="track-title">6. 供其他模型编曲测试：全曲预适配纯干声 & 工程坐标包</div>
+      <div>
+        <a class="dl-btn" href="/handoff_kit_for_other_models/A_Vocals_Full_Adapted_143.63BPM_Fsharp.flac" download>下载 143.63BPM 预适配全曲干声 (FLAC)</a>
+        <a class="dl-btn" style="background:#0097a7;margin-left:6px;" href="/handoff_kit_for_other_models/ARRANGEMENT_SPEC.json" download>下载编曲坐标 JSON</a>
+        <a class="dl-btn" style="background:#2d3436;margin-left:6px;" href="/handoff_kit_for_other_models/README_HANDOFF_KIT.md" download>下载交接说明 MD</a>
+      </div>
+    </div>
+    <div class="track-desc">已将整首 A_Vocals.wav 预先保共振峰拉伸至 143.63 BPM 并对齐 F#大调（纯干声无混响），附带精确小节网格、歌词时间轴与 &lt;-40dB 安全静音切点表，可直接喂给其他模型自由测试编曲能力！</div>
+    <audio controls preload="none" src="/handoff_kit_for_other_models/A_Vocals_Full_Adapted_143.63BPM_Fsharp.flac"></audio>
+  </div>
 </div>
 </body>
 </html>"""
