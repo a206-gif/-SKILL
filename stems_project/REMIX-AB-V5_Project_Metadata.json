@@ -1,7 +1,7 @@
 {
  "project_id": "REMIX-AB-V5",
- "version": "V5-Fragments-Rekindled",
- "concept": "开场Hook→主歌Build→副歌Drop1→连唱Verse/Pre跨Breakdown→副歌Drop2→24小节零气口连唱压终极Drop→DJ Outro",
+ "version": "V5.1-Fragments-Rekindled-Refined",
+ "concept": "开场Hook→主歌Build→副歌Drop1→连唱Verse/Pre跨Breakdown(带dub回声)→副歌Drop2→24小节零气口连唱压终极Drop(Sub冲击)→告别回响Outro",
  "source_a": {
   "file": "音乐A.mp3",
   "grid_bpm": 130.0,
@@ -15,14 +15,14 @@
  "master_metrics": {
   "duration_s": 179.026,
   "sample_rate": 44100,
-  "integrated_lufs": -8.09,
-  "sample_peak_dbfs": -0.8
+  "integrated_lufs": -7.92,
+  "sample_peak_dbfs": -1.04
  },
  "arrangement_cues": [
   {
    "section": "Hook_Open",
    "a_bars_anchor": 90.5,
-   "b_bars_anchor_0idx": 0,
+   "b_bars_anchor_1idx": 1,
    "a_cut_silence_s": [
     151.03,
     164.38
@@ -37,7 +37,7 @@
   {
    "section": "Verse1a_Build",
    "a_bars_anchor": 8.0,
-   "b_bars_anchor_0idx": 8,
+   "b_bars_anchor_1idx": 9,
    "a_cut_silence_s": [
     13.54,
     26.94
@@ -46,13 +46,13 @@
     15.29,
     28.69
    ],
-   "gain_db": 1.5,
+   "gain_db": 2.0,
    "beat_grid_error_ms": 0.001
   },
   {
    "section": "Chorus_Drop1",
    "a_bars_anchor": 90.5,
-   "b_bars_anchor_0idx": 16,
+   "b_bars_anchor_1idx": 17,
    "a_cut_silence_s": [
     150.8,
     177.55
@@ -67,7 +67,7 @@
   {
    "section": "Verse1b_Pre1a",
    "a_bars_anchor": 16.0,
-   "b_bars_anchor_0idx": 34,
+   "b_bars_anchor_1idx": 35,
    "a_cut_silence_s": [
     26.94,
     54.33
@@ -82,7 +82,7 @@
   {
    "section": "Chorus_Drop2",
    "a_bars_anchor": 90.5,
-   "b_bars_anchor_0idx": 57,
+   "b_bars_anchor_1idx": 58,
    "a_cut_silence_s": [
     150.8,
     177.55
@@ -97,7 +97,7 @@
   {
    "section": "Pre1b_Chorus1_Seamless",
    "a_bars_anchor": 32.0,
-   "b_bars_anchor_0idx": 74,
+   "b_bars_anchor_1idx": 75,
    "a_cut_silence_s": [
     54.33,
     95.07
@@ -108,10 +108,73 @@
    ],
    "gain_db": 1.15,
    "beat_grid_error_ms": 0.001
+  },
+  {
+   "section": "Outro_Farewell",
+   "a_bars_anchor": 8.0,
+   "b_bars_anchor_1idx": 100,
+   "a_cut_silence_s": [
+    13.54,
+    20.83
+   ],
+   "remix_time_s": [
+    167.348,
+    174.638
+   ],
+   "gain_db": 1.0,
+   "beat_grid_error_ms": 0.001
   }
  ],
+ "refinements_v5_1": {
+  "ghost_echoes": [
+   {
+    "at_s": 56.085,
+    "gain_db": -9.0,
+    "lp_hz": 3500
+   },
+   {
+    "at_s": 56.921,
+    "gain_db": -15.0,
+    "lp_hz": 2200
+   },
+   {
+    "at_s": 86.999,
+    "gain_db": -8.0,
+    "lp_hz": 4000
+   },
+   {
+    "at_s": 88.67,
+    "gain_db": -12.0,
+    "lp_hz": 2600
+   },
+   {
+    "at_s": 90.341,
+    "gain_db": -16.0,
+    "lp_hz": 1600
+   },
+   {
+    "at_s": 92.012,
+    "gain_db": -21.0,
+    "lp_hz": 1000
+   }
+  ],
+  "predrop_dips_s": [
+   28.514,
+   97.024,
+   138.798
+  ],
+  "sub_impact_s": 138.798,
+  "intro_riser_s": [
+   0.0,
+   1.779
+  ],
+  "outro_farewell_filter_sweep": [
+   4500,
+   1800
+  ]
+ },
  "b_section_map": {
-  "Intro_Signature_Drum_Fill": [
+  "Intro_Signature_Drum_Fill_plus_riser": [
    0.0,
    1.779
   ],
@@ -127,7 +190,7 @@
    28.514,
    55.248
   ],
-  "PostDrop_Breather": [
+  "PostDrop_Breather_ghost_echoes": [
    55.248,
    58.592
   ],
@@ -135,7 +198,7 @@
    58.592,
    86.14
   ],
-  "Pure_Riser": [
+  "Pure_Riser_ghost_echoes": [
    86.14,
    97.024
   ],
@@ -149,10 +212,10 @@
   ],
   "Breakdown2_FinalDrop_seamless24B": [
    125.43,
-   166.998
+   167.001
   ],
-  "DJ_Club_Outro_tails": [
-   166.998,
+  "DJ_Club_Outro_farewell_reprise": [
+   167.204,
    179.026
   ]
  }
