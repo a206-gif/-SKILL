@@ -1,0 +1,159 @@
+{
+ "project_id": "REMIX-AB-V5",
+ "version": "V5-Fragments-Rekindled",
+ "concept": "开场Hook→主歌Build→副歌Drop1→连唱Verse/Pre跨Breakdown→副歌Drop2→24小节零气口连唱压终极Drop→DJ Outro",
+ "source_a": {
+  "file": "音乐A.mp3",
+  "grid_bpm": 130.0,
+  "key": "F major / D minor"
+ },
+ "source_b": {
+  "file": "音乐B.mp3",
+  "grid_bpm": 143.63,
+  "key": "F# major / D# minor (-33 cents)"
+ },
+ "master_metrics": {
+  "duration_s": 179.026,
+  "sample_rate": 44100,
+  "integrated_lufs": -8.09,
+  "sample_peak_dbfs": -0.8
+ },
+ "arrangement_cues": [
+  {
+   "section": "Hook_Open",
+   "a_bars_anchor": 90.5,
+   "b_bars_anchor_0idx": 0,
+   "a_cut_silence_s": [
+    151.03,
+    164.38
+   ],
+   "remix_time_s": [
+    1.558,
+    14.908
+   ],
+   "gain_db": 0.6,
+   "beat_grid_error_ms": 0.001
+  },
+  {
+   "section": "Verse1a_Build",
+   "a_bars_anchor": 8.0,
+   "b_bars_anchor_0idx": 8,
+   "a_cut_silence_s": [
+    13.54,
+    26.94
+   ],
+   "remix_time_s": [
+    15.29,
+    28.69
+   ],
+   "gain_db": 1.5,
+   "beat_grid_error_ms": 0.001
+  },
+  {
+   "section": "Chorus_Drop1",
+   "a_bars_anchor": 90.5,
+   "b_bars_anchor_0idx": 16,
+   "a_cut_silence_s": [
+    150.8,
+    177.55
+   ],
+   "remix_time_s": [
+    28.064,
+    54.814
+   ],
+   "gain_db": 0.5,
+   "beat_grid_error_ms": 0.001
+  },
+  {
+   "section": "Verse1b_Pre1a",
+   "a_bars_anchor": 16.0,
+   "b_bars_anchor_0idx": 34,
+   "a_cut_silence_s": [
+    26.94,
+    54.33
+   ],
+   "remix_time_s": [
+    58.768,
+    86.158
+   ],
+   "gain_db": 1.15,
+   "beat_grid_error_ms": 0.001
+  },
+  {
+   "section": "Chorus_Drop2",
+   "a_bars_anchor": 90.5,
+   "b_bars_anchor_0idx": 57,
+   "a_cut_silence_s": [
+    150.8,
+    177.55
+   ],
+   "remix_time_s": [
+    96.573,
+    123.323
+   ],
+   "gain_db": 0.5,
+   "beat_grid_error_ms": 0.001
+  },
+  {
+   "section": "Pre1b_Chorus1_Seamless",
+   "a_bars_anchor": 32.0,
+   "b_bars_anchor_0idx": 74,
+   "a_cut_silence_s": [
+    54.33,
+    95.07
+   ],
+   "remix_time_s": [
+    126.261,
+    167.001
+   ],
+   "gain_db": 1.15,
+   "beat_grid_error_ms": 0.001
+  }
+ ],
+ "b_section_map": {
+  "Intro_Signature_Drum_Fill": [
+   0.0,
+   1.779
+  ],
+  "Opening_Groove_hook": [
+   1.779,
+   15.147
+  ],
+  "BuildUp_1_verse": [
+   15.147,
+   28.514
+  ],
+  "Main_Drop_1_chorus": [
+   28.514,
+   55.248
+  ],
+  "PostDrop_Breather": [
+   55.248,
+   58.592
+  ],
+  "MidGroove_to_Predrop_seamless16B": [
+   58.592,
+   86.14
+  ],
+  "Pure_Riser": [
+   86.14,
+   97.024
+  ],
+  "Main_Drop_2_chorus": [
+   97.024,
+   123.759
+  ],
+  "Impact_Hit": [
+   123.759,
+   125.43
+  ],
+  "Breakdown2_FinalDrop_seamless24B": [
+   125.43,
+   166.998
+  ],
+  "DJ_Club_Outro_tails": [
+   166.998,
+   179.026
+  ]
+ }
+}
