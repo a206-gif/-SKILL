@@ -1,0 +1,117 @@
+{
+  "project_id": "REMIX-AB-V4",
+  "version": "V4.2-Seamless",
+  "source_a": {
+    "file": "音乐A.mp3",
+    "detected_grid_bpm": 130.0,
+    "librosa_frame_bpm": 129.2,
+    "key": "F major / D minor"
+  },
+  "source_b": {
+    "file": "音乐B.mp3",
+    "detected_grid_bpm": 143.63,
+    "librosa_frame_bpm": 143.55,
+    "key": "F# major / D# minor (-33 cents tuning)"
+  },
+  "adaptation": {
+    "tempo_stretch_ratio": 1.104846,
+    "pitch_shift_semitones": 0.67,
+    "opening_drum_fill_s": [
+      0.0,
+      1.779
+    ],
+    "vocal_entry_s": 1.779
+  },
+  "master_metrics": {
+    "duration_s": 179.026,
+    "sample_rate": 44100,
+    "integrated_lufs": -7.77,
+    "sample_peak_dbfs": -0.5
+  },
+  "arrangement_cues": [
+    {
+      "section": "01_Opening_ChorusHook",
+      "a_bars": "90.5..98.0",
+      "a_cut_silence_s": [
+        166.85,
+        181.6
+      ],
+      "b_bars_1indexed": "1.0..7.5",
+      "remix_time_s": [
+        1.54,
+        14.9
+      ],
+      "gain_db": 0.5
+    },
+    {
+      "section": "02_BuildUp_And_Drop1_Seamless24B",
+      "a_bars": "32.0..56.0",
+      "a_cut_silence_s": [
+        60.02,
+        104.9
+      ],
+      "b_bars_1indexed": "9.0..32.0",
+      "remix_time_s": [
+        15.97,
+        56.59
+      ],
+      "gain_db": 0.6
+    },
+    {
+      "section": "03_MidGroove_Verse1_Uncut8B",
+      "a_bars": "8.0..16.0",
+      "a_cut_silence_s": [
+        14.95,
+        29.75
+      ],
+      "b_bars_1indexed": "35.0..42.0",
+      "remix_time_s": [
+        58.73,
+        72.12
+      ],
+      "gain_db": 1.6
+    },
+    {
+      "section": "04a_PostBreak_PreChorus2_Uncut8B",
+      "a_bars": "80.0..88.0",
+      "a_cut_silence_s": [
+        148.9,
+        164.25
+      ],
+      "b_bars_1indexed": "50.0..57.0",
+      "remix_time_s": [
+        84.72,
+        98.61
+      ],
+      "gain_db": 0.5
+    },
+    {
+      "section": "04b_Drop2_FullChorus2_Uncut16B",
+      "a_bars": "90.0..106.0",
+      "a_cut_silence_s": [
+        166.6,
+        196.0
+      ],
+      "b_bars_1indexed": "58.0..73.0",
+      "remix_time_s": [
+        97.4,
+        124.01
+      ],
+      "gain_db": 0.6
+    },
+    {
+      "section": "05_Break2_And_FinalDrop_Seamless24B",
+      "a_bars": "32.0..56.0",
+      "a_cut_silence_s": [
+        60.02,
+        104.9
+      ],
+      "b_bars_1indexed": "75.0..98.0",
+      "remix_time_s": [
+        126.25,
+        166.88
+      ],
+      "gain_db": 0.7
+    }
+  ]
+}
