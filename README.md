@@ -1,6 +1,14 @@
 # -SKILL
 
-## REMIX-AB-V5 「碎片重燃 / Fragments Rekindled」（V5.1 精修版，最新）
+## ⭐ Skill：`skills/vocal-x-dj-remix/`（教任何模型做 Remix 的方法论包）
+
+- `SKILL.md` —— 主文档：无耳制作工作流（编曲七原则 / 锚点对齐 / 混音配方 / 母带收敛 / 质检表 / 十条军规 / 快速启动提示词）
+- `references/grid_and_placement.md` —— 网格数学与"天作之合"对齐点搜寻法
+- `references/dsp_cookbook.md` —— 可直接复制的 DSP 配方（压缩/混响/延迟/回声/软削波/限幅/MP3）
+- `references/qc_checklist.md` —— 无耳质检清单（可运行判据）
+- `templates/arrangement_table.md` —— 编曲表模板 + REMIX-AB-V5.1 已填范例
+
+## REMIX-AB-V5 「碎片重燃 / Fragments Rekindled」（V5.1 精修版）
 
 基于 `A_Vocal_x_B_DJ_Handoff_Engineering_Kit.zip` 工作包重制的**全新编曲**版本：
 
